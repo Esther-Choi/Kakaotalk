@@ -175,7 +175,7 @@ li.friends {
 .menu {
   display: flex;
   justify-content: space-around;
-  position: absolute;
+  position: relative;
   bottom: 20px;
 }
 
