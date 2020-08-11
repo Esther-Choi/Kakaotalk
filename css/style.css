@@ -177,7 +177,8 @@ li.friends {
   justify-content: space-around;
   position: fixed;
   bottom: 2%;
-  left: 5%;
+  left: 4%;
+  right: 4%;
 }
 
 .menu button {
