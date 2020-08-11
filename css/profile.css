@@ -1,0 +1,157 @@
+:root {
+  /* Color */
+  --white-color: #fff;
+  --black-color: #333333;
+  --pink-color: #ffb3b3;
+  --grey-color: #b3b3b3;
+  --light-grey-color: #f2f2f2;
+
+  /* Size */
+  --padding: 12px;
+  --img: 45px;
+
+  /* Font Size */
+  --font-xlarge: 22px;
+  --font-large: 20px;
+  --font-medium: 15px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 500px;
+  background-color: var(--pink-color);
+}
+
+body {
+  font-family: "Baloo Tamma 2", cursive;
+  padding: 0 var(--padding);
+}
+
+ul {
+  list-style-type: none;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+}
+
+.statusBar {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-medium);
+}
+
+.others i,
+span {
+  padding-right: 2px;
+  color: var(--white-color);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--padding);
+}
+
+.header i {
+  color: var(--white-color);
+  font-size: var(--font-large);
+}
+
+.header button .fa-times {
+  font-size: 28px;
+  margin-left: 5px;
+}
+
+.header .icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .icons button {
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--white-color);
+  border-radius: 20px;
+  margin-left: 17px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 590px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.profile img {
+  width: 120px;
+  border-radius: 50px;
+  padding-bottom: var(--padding);
+}
+
+.profile span {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.menu {
+  padding: 0 25px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 40px;
+}
+
+.menu button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white-color);
+  padding: 0 40px;
+}
+
+.menu i {
+  font-size: var(--font-xlarge);
+  padding-bottom: var(--padding);
+}
+
+.bigScreenText {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--pink-color);
+  z-index: 3;
+  color: darkgray;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+  display: none;
+}
+
+@media screen and (min-width: 505px) {
+  .bigScreenText {
+    display: flex;
+  }
+}

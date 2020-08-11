@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap"
+      rel="stylesheet"
+    />
+    <title>kakaotalk</title>
+    <script src="main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/3087aeb32d.js"
+      rossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="statusBar">
+      <div class="time">
+        <span class="time">15:55</span>
+      </div>
+      <div class="others">
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-signal"></i>
+        <span class="battery">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </section>
+    <section class="header">
+      <span class="title">Friends</span>
+      <ul class="header">
+        <li>
+          <button>
+            <i class="fas fa-search"></i>
+          </button>
+        </li>
+        <li>
+          <button>
+            <i class="fas fa-user-plus"></i>
+          </button>
+        </li>
+        <li>
+          <button>
+            <i class="fas fa-music"></i>
+          </button>
+        </li>
+        <li>
+          <button>
+            <i class="fas fa-cog"></i>
+          </button>
+        </li>
+      </ul>
+    </section>
+    <section class="friendList">
+      <ul class="me">
+        <li>
+          <button type="button" onclick="location.href='profile_me.html'">
+            <img src="img/me.jpeg" alt="" />
+            <span class="name">Esther Choi</span>
+          </button>
+        </li>
+      </ul>
+      <ul class="favorites">
+        <li>
+          <span class="subtitle">Favorites</span>
+        </li>
+        <li>
+          <button type="button" onclick="location.href='profile_bf.html'">
+            <img src="img/bf.png" alt="" />
+            <span class="name">boyFriend❤️</span>
+          </button>
+        </li>
+      </ul>
+      <ul class="channel">
+        <li class="channel">
+          <span class="subtitle">Channel</span>
+        </li>
+        <li>
+          <button>
+            <img src="img/channel.png" alt="" />
+            <span class="name">Channel</span>
+          </button>
+        </li>
+      </ul>
+      <ul class="friends">
+        <li class="friends"><span class="subtitle">Friends 3</span></li>
+        <li>
+          <button
+            class="ironman"
+            type="button"
+            onclick="location.href='profile_ironman.html'"
+          >
+            <div class="image"><img src="img/ironman.jpg" alt="" /></div>
+            <div class="info">
+              <span class="name">Iron man</span>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button type="button" onclick="location.href='profile_thor.html'">
+            <img src="img/thor.jpg" alt="" />
+            <span class="name">Thor</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" onclick="location.href='profile_captain.html'">
+            <img src="img/captain.jpg" alt="" />
+            <span class="name">Captain A.</span>
+          </button>
+        </li>
+      </ul>
+    </section>
+    <section class="menuBar">
+      <ul class="menu">
+        <li class="friend-menu">
+          <button type="button" onclick="location.href='index.html'">
+            <i class="fas fa-user"></i>
+            <span>Friend</span>
+          </button>
+        </li>
+        <li class="chat-menu">
+          <button type="button" onclick="location.href='chat.html'">
+            <i class="fas fa-comments"></i>
+            <span>Chat</span>
+          </button>
+        </li>
+        <li class="find-menu">
+          <button type="button" onclick="location.href='find.html'">
+            <i class="fas fa-search"></i>
+            <span>Find</span>
+          </button>
+        </li>
+        <li class="more-menu">
+          <button type="button" onclick="location.href='more.html'">
+            <i class="fas fa-ellipsis-h"></i>
+            <span>More</span>
+          </button>
+        </li>
+      </ul>
+    </section>
+    <div class="bigScreenText">
+      <span>Make the width narrower!</span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/chat.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap"
+      rel="stylesheet"
+    />
+    <title>kakaotalk</title>
+    <script src="main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/3087aeb32d.js"
+      rossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="statusBar">
+      <div class="time">
+        <span class="time">15:55</span>
+      </div>
+      <div class="others">
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-signal"></i>
+        <span class="battery">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </section>
+    <section class="header">
+      <span class="title">Chats</span>
+      <ul class="header">
+        <li>
+          <button>
+            <i class="fas fa-search"></i>
+          </button>
+        </li>
+        <li>
+          <button>
+            <i class="fas fa-comment-medical"></i>
+          </button>
+        </li>
+        <li>
+          <button>
+            <i class="fas fa-music"></i>
+          </button>
+        </li>
+        <li>
+          <button>
+            <i class="fas fa-cog"></i>
+          </button>
+        </li>
+      </ul>
+    </section>
+    <section class="chatList">
+      <ul>
+        <li>
+          <button type="button" onclick="location.href='chat_bf.html'">
+            <div class="chat-message">
+              <img src="img/bf.png" alt="" />
+              <div class="info">
+                <span class="name">boyFriend❤️</span>
+                <span class="content">I miss you</span>
+              </div>
+            </div>
+          </button>
+          <div class="time">
+            <span class="time">9:32 PM</span>
+          </div>
+        </li>
+        <li>
+          <button type="button" onclick="location.href='chat_ironman.html'">
+            <div class="chat-message">
+              <img src="img/ironman.jpg" alt="" />
+              <div class="info">
+                <span class="name">Iron man</span>
+                <span class="content">Good Bye</span>
+              </div>
+            </div>
+          </button>
+          <div class="time">
+            <span class="time">11:00 AM</span>
+          </div>
+        </li>
+        <li>
+          <button type="button" onclick="location.href='chat_captain.html'">
+            <div class="chat-message">
+              <img src="img/captain.jpg" alt="" />
+              <div class="info">
+                <span class="name">Captain A.</span>
+                <span class="content">Hi Esther!</span>
+              </div>
+            </div>
+          </button>
+          <div class="time">
+            <span class="time">10:30 AM</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="menuBar">
+      <ul class="menu">
+        <li class="friend-menu">
+          <button type="button" onclick="location.href='index.html'">
+            <i class="fas fa-user"></i>
+            <span>Friend</span>
+          </button>
+        </li>
+        <li class="chat-menu">
+          <button type="button" onclick="location.href='chat.html'">
+            <i class="fas fa-comments"></i>
+            <span>Chat</span>
+          </button>
+        </li>
+        <li class="find-menu">
+          <button type="button" onclick="location.href='find.html'">
+            <i class="fas fa-search"></i>
+            <span>Find</span>
+          </button>
+        </li>
+        <li class="more-menu">
+          <button type="button" onclick="location.href='more.html'">
+            <i class="fas fa-ellipsis-h"></i>
+            <span>More</span>
+          </button>
+        </li>
+      </ul>
+    </section>
+    <div class="bigScreenText">
+      <span>Make the width narrower!</span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+:root {
+  /* Color */
+  --white-color: #fff;
+  --black-color: #333333;
+  --pink-color: #ffb3b3;
+  --grey-color: #b3b3b3;
+  --light-grey-color: #f2f2f2;
+
+  /* Size */
+  --padding: 12px;
+  --img: 45px;
+
+  /* Font Size */
+  --font-xlarge: 22px;
+  --font-large: 20px;
+  --font-medium: 15px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 500px;
+}
+
+body {
+  font-family: "Baloo Tamma 2", cursive;
+  padding: 0 var(--padding);
+}
+
+ul {
+  list-style-type: none;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+}
+
+.statusBar {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-medium);
+  color: var(--black-color);
+}
+
+.others i,
+span {
+  padding-right: 2px;
+  color: var(--black-color);
+}
+
+.header {
+  padding: calc(var(--padding) / 2) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-xlarge);
+  color: var(--black-color);
+}
+
+img {
+  width: var(--img);
+  border-radius: 18px;
+}
+
+.header li i {
+  padding-left: calc(var(--padding) * 2);
+  font-size: var(--font-large);
+  color: var(--black-color);
+}
+
+.subtitle {
+  font-size: var(--font-small);
+  color: var(--black-color);
+}
+
+.me {
+  padding-bottom: calc(var(--padding) * 2);
+  padding-top: var(--padding);
+}
+
+.me li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.me li button {
+  display: flex;
+  align-items: center;
+}
+
+.me li img {
+  width: 70px;
+  border-radius: 28px;
+}
+
+.me .name,
+.me .email {
+  font-size: var(--font-medium);
+  padding-left: var(--padding);
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+.me .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.me .email {
+  font-size: var(--font-small);
+  color: var(--grey-color);
+}
+
+.me .myBtn {
+  border: 1px solid var(--light-grey-color);
+  width: 60px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+}
+
+.me .btnSpan {
+  font-size: var(--font-small);
+}
+
+.kakaopay {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--light-grey-color);
+  align-items: center;
+  height: 55px;
+  border-radius: 5px;
+}
+
+.kakaopay .payInfo {
+  font-size: var(--font-medium);
+  display: flex;
+  align-items: center;
+  background-color: var(--white-color);
+  height: 32px;
+  margin: var(--padding);
+  padding: 0 var(--padding);
+  border-radius: 15px;
+}
+
+.payInfo .pay {
+  font-weight: bold;
+  padding: 0 2px 4px 2px;
+}
+
+.payInfo i {
+  font-size: var(--font-small);
+}
+
+.payMenu {
+  padding-right: calc(var(--padding) / 2);
+}
+
+.payMenu span {
+  font-size: var(--font-medium);
+  padding: 0 10px;
+}
+
+.payMenu .pay {
+  border-left: 1px solid var(--grey-color);
+  border-right: 1px solid var(--grey-color);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 20px;
+}
+
+.menu button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 41px;
+}
+
+.menu li button i {
+  font-size: var(--font-large);
+  color: var(--grey-color);
+}
+
+.menu span {
+  color: var(--grey-color);
+  font-size: var(--font-small);
+}
+
+.menu .more-menu i,
+.menu .more-menu span {
+  color: var(--pink-color);
+}
+
+.menu img {
+  width: 470px;
+  height: 350px;
+  position: relative;
+  top: -380px;
+  padding: 0 var(--padding);
+}
+
+.bigScreenText {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--pink-color);
+  z-index: 3;
+  color: darkgray;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+  display: none;
+}
+
+@media screen and (min-width: 505px) {
+  .bigScreenText {
+    display: flex;
+  }
+}
