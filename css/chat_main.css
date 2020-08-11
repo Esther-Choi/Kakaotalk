@@ -27,7 +27,8 @@
 }
 
 html {
-  width: 500px;
+  width: 100vw;
+  height: 100vh;
 }
 
 body {
@@ -145,16 +146,20 @@ img {
   padding-left: 2px;
 }
 
-.inputBar {
+.inputBar ul {
   display: flex;
   justify-content: space-between;
-  position: relative;
-  bottom: -780px;
+  position: fixed;
+  bottom: 1%;
 }
 
 .inputBar i {
   font-size: 25px;
   color: var(--grey-color);
+}
+
+.inputBar .fa-plus-square {
+  padding-right: 387px;
 }
 
 .inputBar .fa-hashtag {
