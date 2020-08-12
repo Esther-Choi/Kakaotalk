@@ -25,7 +25,8 @@
 }
 
 html {
-  width: 500px;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--pink-color);
 }
 
