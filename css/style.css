@@ -33,6 +33,10 @@ body {
   padding: 0 var(--padding);
 }
 
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
 ul {
   list-style-type: none;
 }
