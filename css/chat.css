@@ -45,6 +45,7 @@ button:focus {
   cursor: pointer;
   outline: none;
   background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .statusBar {
