@@ -213,10 +213,12 @@ img {
 }
 
 .menu img {
-  width: 470px;
+  width: 95%;
   height: 350px;
-  position: relative;
-  top: -380px;
+  position: fixed;
+  top: 27.5%;
+  left: 2.5%;
+  right: 2.5%;
   padding: 0 var(--padding);
 }
 
