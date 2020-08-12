@@ -160,10 +160,6 @@ img {
   color: var(--grey-color);
 }
 
-.inputBar .fa-plus-square {
-  padding-right: 387px;
-}
-
 .inputBar .fa-hashtag {
   padding-left: 20px;
 }
