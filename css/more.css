@@ -212,11 +212,15 @@ img {
   color: var(--pink-color);
 }
 
-.menu img {
+.menuImg {
+  position: absolute;
+  top: 270px;
+}
+
+.menuImg img {
   width: 95%;
   height: 34%;
   position: fixed;
-  top: 27.5%;
   left: 2.5%;
   right: 2.5%;
   padding: 0 var(--padding);
