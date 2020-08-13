@@ -179,15 +179,15 @@ span.read {
 .inputBar .inputContainer {
   display: flex;
   align-items: flex-start;
-  padding-left: var(--padding);
 }
 
 .inputBar .input {
-  width: 74vw;
-  height: 3vh;
+  width: 70vw;
+  height: 30px;
   border: none;
   padding-bottom: 5px;
   font-size: 18px;
+  background-color: var(--pink-color);
 }
 
 .inputBar .input:focus {
