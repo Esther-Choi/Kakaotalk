@@ -183,8 +183,8 @@ span.read {
 }
 
 .inputBar .input {
-  width: 368px;
-  height: 30px;
+  width: 74vw;
+  height: 3vh;
   border: none;
   padding-bottom: 5px;
   font-size: 18px;
