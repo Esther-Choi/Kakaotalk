@@ -10,7 +10,6 @@
     />
 
     <title>kakaotalk</title>
-    <script src="main.js" defer></script>
     <script
       src="https://kit.fontawesome.com/3087aeb32d.js"
       rossorigin="anonymous"
@@ -56,7 +55,7 @@
     </section>
     <section class="chatList">
       <ul>
-        <li>
+        <li class="bf">
           <button type="button" onclick="location.href='chat_bf.html'">
             <div class="chat-message">
               <img src="img/bf.png" alt="" />
@@ -66,11 +65,11 @@
               </div>
             </div>
           </button>
-          <div class="time">
+          <div>
             <span class="time">9:32 PM</span>
           </div>
         </li>
-        <li>
+        <li class="ironman">
           <button type="button" onclick="location.href='chat_ironman.html'">
             <div class="chat-message">
               <img src="img/ironman.jpg" alt="" />
@@ -80,11 +79,11 @@
               </div>
             </div>
           </button>
-          <div class="time">
+          <div>
             <span class="time">11:00 AM</span>
           </div>
         </li>
-        <li>
+        <li class="captain">
           <button type="button" onclick="location.href='chat_captain.html'">
             <div class="chat-message">
               <img src="img/captain.jpg" alt="" />
@@ -94,7 +93,7 @@
               </div>
             </div>
           </button>
-          <div class="time">
+          <div>
             <span class="time">10:30 AM</span>
           </div>
         </li>
@@ -132,5 +131,8 @@
       <span>Make the width narrower!</span>
     </div>
     <script src="js/clock.js"></script>
+    <script src="js/lastMsg_bf.js"></script>
+    <script src="js/lastMsg_ironman.js"></script>
+    <script src="js/lastMsg_captain.js"></script>
   </body>
 </html>
