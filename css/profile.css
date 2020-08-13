@@ -55,7 +55,7 @@ button:focus {
   display: flex;
   justify-content: space-between;
   font-size: var(--font-medium);
-  padding-bottom: 3px;
+  padding-top: 4px;
 }
 
 .others i,
