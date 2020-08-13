@@ -7,6 +7,7 @@
   --grey-color: #999999;
   --light-grey-color: #f2f2f2;
   --dark-grey-color: #595959;
+  --blue-color: #3385ff;
 
   /* Size */
   --padding: 12px;
@@ -104,7 +105,7 @@ img {
 
 .messages {
   overflow: auto;
-  height: calc(100vh - 133px);
+  height: calc(100vh - 130px);
 }
 
 .messages .my_message {
@@ -218,6 +219,46 @@ span.read {
 
 .send {
   padding-bottom: 4px;
+}
+
+.deleteMsgBox {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 40%;
+  left: 16%;
+  right: 16%;
+  background-color: var(--white-color);
+  padding: 30px;
+  border-radius: 5px;
+  z-index: 3;
+}
+
+.deleteMsgBox > span {
+  font-weight: bold;
+}
+
+.deleteMsgBox .btnBox {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.deleteMsgBox .yes > span,
+.deleteMsgBox .no > span {
+  font-size: var(--font-medium);
+  color: var(--blue-color);
+  font-weight: bold;
+}
+
+.bg {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--grey-color);
+  opacity: 0.3;
 }
 
 .bigScreenText {
