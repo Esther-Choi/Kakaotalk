@@ -1,7 +1,10 @@
 const messageForm = document.querySelector("form"),
   messageInput = messageForm.querySelector("input"),
   message = document.querySelector(".messageList");
-messageContainer = document.querySelector(".messages");
+(messageContainer = document.querySelector(".messages")),
+  (hashtagIcon = document.querySelector(".fa-hashtag")),
+  (sendIcon = document.querySelector(".fa-paper-plane")),
+  (sendBtn = document.querySelector(".send"));
 
 function paintMsg(text) {
   const li = document.createElement("li");
@@ -17,6 +20,7 @@ function paintMsg(text) {
   divTime.className = "time";
   spanTime.className = "time";
   divMsg.className = "my_messageBox";
+  spanMsg.className = "content";
   spanRead.className = "read";
   if (hours < 12) {
     if (minutes < 10) {
@@ -42,6 +46,17 @@ function paintMsg(text) {
   messageContainer.scrollTop = messageContainer.scrollHeight;
 }
 
+function changeBtn(event) {
+  const currentValue = messageInput.value;
+  if (currentValue == "") {
+    hashtagIcon.style.display = "block";
+    sendIcon.style.display = "none";
+  } else {
+    hashtagIcon.style.display = "none";
+    sendIcon.style.display = "block";
+  }
+}
+
 function handleSubmit(event) {
   event.preventDefault();
   const currentValue = messageInput.value;
@@ -49,10 +64,14 @@ function handleSubmit(event) {
     paintMsg(currentValue);
   }
   messageInput.value = "";
+  changeBtn();
 }
 
 function init() {
+  sendIcon.style.display = "none";
+  messageForm.addEventListener("input", changeBtn);
   messageForm.addEventListener("submit", handleSubmit);
+  sendBtn.addEventListener("click", handleSubmit);
 }
 
 init();
