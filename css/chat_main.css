@@ -32,8 +32,11 @@ html {
 }
 
 body {
-  font-family: "Baloo Tamma 2", cursive;
   padding: 0 var(--padding);
+}
+
+span {
+  font-family: "Sunflower", sans-serif;
 }
 
 ul {
@@ -54,6 +57,7 @@ button:focus {
   justify-content: space-between;
   font-size: var(--font-medium);
   color: var(--black-color);
+  padding-top: 4px;
 }
 
 .others i,

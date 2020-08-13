@@ -32,8 +32,11 @@ html {
 }
 
 body {
-  font-family: "Baloo Tamma 2", cursive;
   padding: 0 var(--padding);
+}
+
+span {
+  font-family: "Sunflower", sans-serif;
 }
 
 ul {
@@ -54,6 +57,7 @@ button:focus {
   justify-content: space-between;
   font-size: var(--font-medium);
   color: var(--black-color);
+  padding-top: 4px;
 }
 
 .others i,
@@ -92,8 +96,8 @@ img {
   justify-content: space-around;
   position: fixed;
   bottom: 2%;
-  left: 6%;
-  right: 6%;
+  left: 1%;
+  right: 1%;
 }
 
 .menu button {
@@ -106,6 +110,7 @@ img {
 .menu li button i {
   font-size: var(--font-large);
   color: var(--grey-color);
+  padding-bottom: 3px;
 }
 
 .menu span {
