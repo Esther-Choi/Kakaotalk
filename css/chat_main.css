@@ -104,7 +104,7 @@ img {
 
 .messages {
   overflow: auto;
-  height: calc(100vh - 142px);
+  height: calc(100vh - 133px);
 }
 
 .messages .my_message {
