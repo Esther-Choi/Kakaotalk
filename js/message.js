@@ -47,6 +47,7 @@ function paintMsg(text) {
 }
 
 function changeBtn(event) {
+    event.preventDefault();
   const currentValue = messageInput.value;
   if (currentValue == "") {
     hashtagIcon.style.display = "block";
