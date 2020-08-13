@@ -3,7 +3,9 @@
   --white-color: #fff;
   --black-color: #333333;
   --pink-color: #ffb3b3;
+  --red-color: #ff0000;
   --grey-color: #b3b3b3;
+  --dark-grey-color: #595959;
 
   /* Size */
   --padding: 12px;
@@ -84,100 +86,11 @@ img {
   color: var(--black-color);
 }
 
-.me {
-  padding-bottom: calc(var(--padding) * 2);
-}
-
-.me li button {
-  display: flex;
-  align-items: center;
-}
-
-.me li img {
-  width: 70px;
-  border-radius: 28px;
-}
-
-.friendList .name {
-  font-size: var(--font-medium);
-  padding-left: var(--padding);
-  color: var(--black-color);
-}
-
-span.favorites {
-  font-size: var(--font-small);
-  color: var(--black-color);
-}
-
-.favorites button {
-  padding: 8px 0;
-  display: flex;
-  align-items: center;
-  padding-bottom: calc(var(--padding) * 2);
-}
-
-.favorites button i {
-  font-size: var(--img);
-  color: var(--pink-color);
-}
-
-.favorites button span {
-  font-size: var(--font-medium);
-}
-
-li.channel {
-  padding-bottom: calc(var(--padding) / 2);
-}
-
-ul.channel button {
-  display: flex;
-  align-items: center;
-}
-
-ul.channel button span {
-  font-size: var(--font-medium);
-  padding-left: var(--padding);
-}
-
-li.friends {
-  padding-top: calc(var(--padding) * 2);
-  padding-bottom: calc(var(--padding) / 2);
-}
-
-.friends button {
-  display: flex;
-  align-items: center;
-  font-size: var(--font-medium);
-}
-
-.ironman {
-  display: flex;
-  align-items: center;
-  font-size: var(--font-medium);
-}
-
-.ironman .info {
-  display: flex;
-  flex-direction: column;
-}
-
-.friends li {
-  padding-bottom: var(--padding);
-}
-
-.message {
-  font-size: var(--font-micro);
-}
-
-.friends button span {
-  padding-left: var(--padding);
-}
-
 .menu {
   display: flex;
   justify-content: space-around;
-  position: fixed;
-  bottom: 2%;
+  position: absolute;
+  bottom: 20px;
 }
 
 .menu button {
@@ -197,9 +110,50 @@ li.friends {
   font-size: var(--font-small);
 }
 
-.menu .friend-menu i,
-.menu .friend-menu span {
+.menu .chat-menu i,
+.menu .chat-menu span {
   color: var(--pink-color);
+}
+
+.chat-message {
+  display: flex;
+  align-items: center;
+}
+
+.chatList li {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: calc(var(--padding) * 2);
+}
+
+.chatList .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.chatList span {
+  text-align: left;
+  padding-left: var(--padding);
+}
+
+.name {
+  font-size: var(--font-medium);
+}
+
+.chatList .content {
+  font-size: var(--font-micro);
+  color: var(--dark-grey-color);
+}
+
+.chatList .content,
+.chatList .name {
+  padding-bottom: 3px;
+}
+
+.chatList .time {
+  font-size: var(--font-micro);
+  color: var(--grey-color);
+  padding-top: 8px;
 }
 
 .bigScreenText {
