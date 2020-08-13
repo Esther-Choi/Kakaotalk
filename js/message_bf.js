@@ -4,9 +4,61 @@ const messageForm = document.querySelector("form"),
 (messageContainer = document.querySelector(".messages")),
   (hashtagIcon = document.querySelector(".fa-hashtag")),
   (sendIcon = document.querySelector(".fa-paper-plane")),
-  (sendBtn = document.querySelector(".send"));
+  (sendBtn = document.querySelector(".send")),
+  (body = document.querySelector("body"));
 
 let msg = [];
+
+function deleteMsg(event) {
+  const click = event.target;
+  const div = click.parentNode;
+  const btn = div.parentNode;
+  const li = btn.parentNode;
+  const background = document.createElement("div");
+  const deleteMsgBox = document.createElement("div");
+  const deleteMsg = document.createElement("span");
+  const btnBox = document.createElement("div");
+  const yesBtn = document.createElement("button");
+  const yes = document.createElement("span");
+  const noBtn = document.createElement("button");
+  const no = document.createElement("span");
+  background.className = "bg";
+  deleteMsgBox.className = "deleteMsgBox";
+  btnBox.className = "btnBox";
+  yesBtn.className = "yes";
+  noBtn.className = "no";
+  deleteMsg.innerText = "Do you want to delete the message?";
+  yes.innerText = "yes";
+  no.innerText = "no";
+  deleteMsgBox.appendChild(deleteMsg);
+  deleteMsgBox.appendChild(btnBox);
+  btnBox.appendChild(yesBtn);
+  btnBox.appendChild(noBtn);
+  yesBtn.appendChild(yes);
+  noBtn.appendChild(no);
+  body.appendChild(deleteMsgBox);
+  body.appendChild(background);
+  background.style.display = "block";
+  yesBtn.addEventListener("click", () => {
+    deleteMsgBox.style.display = "none";
+    background.style.display = "none";
+    message.removeChild(li);
+    const cleanMsg = msg.filter(function filterFn(msg) {
+      return msg.id !== parseInt(li.id);
+      // filter는 msg[]에 있는 모든 요소들에 지정 함수를 적용해 값이 true인 것들만
+      // 골라서 list 값들을 새로 바꾼다. 삭제 버튼을 누르면 html msgList와 msg[]를
+      // 하나하나 비교해서 id가 같지 않은, 즉 삭제 되어 없는걸 리턴해 그걸 제외한 나머지로
+      // 새로 리스트를 구성하여 msg에 삽입한다.
+    });
+    msg = cleanMsg;
+    saveMsg();
+  });
+
+  noBtn.addEventListener("click", () => {
+    deleteMsgBox.style.display = "none";
+    background.style.display = "none";
+  });
+}
 
 function saveMsg() {
   localStorage.setItem("msg_bf", JSON.stringify(msg));
@@ -22,10 +74,12 @@ function paintMsg(text) {
   const divMsg = document.createElement("div");
   const spanMsg = document.createElement("span");
   const spanRead = document.createElement("span");
+  const button = document.createElement("button");
   const date = new Date();
   const hours = date.getHours();
   const minutes = date.getMinutes();
   const newId = msg.length + 1; // 아래 obj에서 사용될 id 변수 생성
+  button.addEventListener("click", deleteMsg);
   li.className = "my_message";
   li.id = newId;
   divTime.className = "time";
@@ -49,9 +103,10 @@ function paintMsg(text) {
   spanMsg.innerText = text;
   spanRead.innerText = "1";
   li.appendChild(divTime);
-  li.appendChild(divMsg);
+  li.appendChild(button);
   divTime.appendChild(spanRead);
   divTime.appendChild(spanTime);
+  button.appendChild(divMsg);
   divMsg.appendChild(spanMsg);
   message.appendChild(li);
   messageContainer.scrollTop = messageContainer.scrollHeight;
@@ -73,7 +128,9 @@ function paintOldMsg(text, time) {
   const divMsg = document.createElement("div");
   const spanMsg = document.createElement("span");
   const spanRead = document.createElement("span");
+  const button = document.createElement("button");
   const newId = msg.length + 1; // 아래 obj에서 사용될 id 변수 생성
+  button.addEventListener("click", deleteMsg);
   li.className = "my_message";
   li.id = newId;
   divTime.className = "time";
@@ -85,9 +142,10 @@ function paintOldMsg(text, time) {
   spanMsg.innerText = text;
   spanRead.innerText = "1";
   li.appendChild(divTime);
-  li.appendChild(divMsg);
+  li.appendChild(button);
   divTime.appendChild(spanRead);
   divTime.appendChild(spanTime);
+  button.appendChild(divMsg);
   divMsg.appendChild(spanMsg);
   message.appendChild(li);
   messageContainer.scrollTop = messageContainer.scrollHeight;
