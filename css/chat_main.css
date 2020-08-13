@@ -203,8 +203,21 @@ span.read {
   color: var(--grey-color);
 }
 
-.inputBar .fa-hashtag {
+.inputBar .fa-paper-plane {
+  color: var(--pink-color);
+}
+
+.inputBar .fa-hashtag,
+.inputBar .fa-paper-plane {
   padding-left: 20px;
+}
+
+.icon {
+  display: flex;
+}
+
+.send {
+  padding-bottom: 4px;
 }
 
 .bigScreenText {
