@@ -9,7 +9,6 @@
       rel="stylesheet"
     />
     <title>kakaotalk</title>
-    <script src="main.js" defer></script>
     <script
       src="https://kit.fontawesome.com/3087aeb32d.js"
       rossorigin="anonymous"
@@ -47,7 +46,7 @@
       </ul>
     </section>
     <section class="messages">
-      <ul>
+      <ul class="messageList">
         <li class="my_message">
           <div class="time">
             <span class="time">10:00 AM</span>
@@ -71,9 +70,14 @@
       </ul>
     </section>
     <section class="inputBar">
-      <ul>
+      <ul class="inputList">
         <li>
           <i class="far fa-plus-square"></i>
+        </li>
+        <li class="inputContainer">
+          <form>
+            <input type="text" class="input" />
+          </form>
         </li>
         <li>
           <i class="far fa-smile"></i>
@@ -84,5 +88,7 @@
     <div class="bigScreenText">
       <span>Make the width narrower!</span>
     </div>
+    <script src="js/clock.js"></script>
+    <script src="js/message.js"></script>
   </body>
 </html>
