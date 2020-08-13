@@ -236,6 +236,7 @@ span.read {
 
 .deleteMsgBox > span {
   font-weight: bold;
+  text-align: center;
 }
 
 .deleteMsgBox .btnBox {
