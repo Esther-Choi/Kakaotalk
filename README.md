@@ -1,9 +1,11 @@
 # Kakaotalk
 A clone of Kakaotalk messanger using HTML and CSS.
 
-# Pages
+##
 
-## Main Pages
+## Pages
+
+* Main Pages
 <div>
   <img src="https://user-images.githubusercontent.com/68029297/90973671-3d38ae00-e55f-11ea-8b9f-f55716cff66c.png" width="230">
   
@@ -16,7 +18,7 @@ A clone of Kakaotalk messanger using HTML and CSS.
 
 ## 
 
-## Profile & Chat Pages
+* Profile & Chat Pages
 <div>
   <img src="https://user-images.githubusercontent.com/68029297/90973787-3e1e0f80-e560-11ea-8b25-928666b1c676.png" width="230">
   
