@@ -1,5 +1,5 @@
 # Kakaotalk
-A clone of Kakaotalk messanger using HTML and CSS.
+A clone of Kakaotalk messanger using HTML, CSS and VJ.
 
 ##
 
@@ -29,8 +29,24 @@ A clone of Kakaotalk messanger using HTML and CSS.
   <img width="230" src="https://user-images.githubusercontent.com/68029297/90973791-42e2c380-e560-11ea-9bdb-77d67497d98a.png">
 </div>
 
-# Features
+##
 
+## Features
 
-# Try it out
+* chatting
+<img src="https://user-images.githubusercontent.com/68029297/90973965-ee404800-e561-11ea-8969-499251e8da73.gif" width="230">
+
+##
+ 
+* update thumbnail message
+<img src="https://user-images.githubusercontent.com/68029297/90974103-08c6f100-e563-11ea-825d-380cdfcf4710.gif" width="230">
+
+##
+
+* delete messgaes
+<img src="https://user-images.githubusercontent.com/68029297/90974104-0b294b00-e563-11ea-8394-1c431d7e4645.gif" width="230">
+
+##
+
+## Try it out
 https://esther-choi.github.io/Kakaotalk/index.html
