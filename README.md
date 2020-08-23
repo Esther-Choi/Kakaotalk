@@ -35,8 +35,6 @@ A clone of Kakaotalk messanger using HTML, CSS and VJ.
 
 * Real Time
 
-##
-
 * chatting
 <img src="https://user-images.githubusercontent.com/68029297/90973965-ee404800-e561-11ea-8969-499251e8da73.gif" width="230">
 
